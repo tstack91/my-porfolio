@@ -1,8 +1,9 @@
+
 /* font-family: 'Caveat', cursive;
 font-family: 'Lobster', cursive;
 font-family: 'Lobster Two', cursive;
 */
-
+/*---------------------------------------HEADER STYLES--------------------------------------*/
 h1{
     text-align: center;
     font-family: 'Lobster Two';
@@ -56,6 +57,7 @@ nav ul li a:before {
 nav ul li a:hover {
     color: #555;
 }
+
 /* stroke */
 nav.stroke ul li a,
 nav.fill ul li a {
@@ -100,11 +102,21 @@ nav.fill ul li a:hover:after {
     opacity: 1;
 }
 
+.nav-item{
+    font-family: 'Caveat';
+    font-size: larger;
+}
+
+nav a.navbar-brand:hover{
+    color: #fff;
+}
+/*-----------------------------------------------BODY STYLES---------------------------------------*/
+
 .container{
     display: block;
 }
 
-.main {
+.main{
     grid-area: main;
     border: 5px ridge;
     border-radius: 20px; 
@@ -181,7 +193,7 @@ col{
     }
 }
 
-/*--Footer styles--*/
+/*------------------------------------------------Footer styles-----------------------------------------------*/
 
 .links{
     width: 100px;
