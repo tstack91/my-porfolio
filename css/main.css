@@ -1,46 +1,53 @@
-
 /* font-family: 'Caveat', cursive;
 font-family: 'Lobster', cursive;
 font-family: 'Lobster Two', cursive;
 */
-/*---------------------------------------HEADER STYLES--------------------------------------*/
-h1{
+
+@-webkit-keyframes fill {
+    0% {
+      width: 0%;
+      height: 1px;
+    }
+    50% {
+      width: 100%;
+      height: 1px;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+      background: #333;
+    }
+  }
+  h1 {
     text-align: center;
     font-family: 'Lobster Two';
-}
-
-.wrapper {
+  }
+  .wrapper {
     display: grid;
-        grid-template-areas:
-        "header header header"
-        "main main main"
-        "main main main"
-        "footer footer footer";
-        min-height: 80vh;
-        background-color: #2C3333;
-    }
-
-.header {
+    grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer";
+    min-height: 80vh;
+    background-color: #2C3333;
+  }
+  .header {
     grid-area: header;
     border: 5px ridge;
-    border-radius: 20px;  
+    border-radius: 20px;
     border-color: #0E8388;
     height: 200px;
     width: 100%;
     background-image: linear-gradient(#9933cc, #33b5e5, #0099cc);
-}
-
-nav {
+  }
+  nav {
     width: 80%;
-}
-nav ul {
+  }
+  nav ul {
     list-style: none;
     text-align: center;
-}
-nav ul li {
+  }
+  nav ul li {
     display: inline-block;
-}
-nav ul li a {
+  }
+  nav ul li a {
     display: block;
     padding: 15px;
     text-decoration: none;
@@ -48,23 +55,24 @@ nav ul li a {
     font-weight: 800;
     text-transform: uppercase;
     margin: 0 10px;
-}
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-    transition: all .5s;
-}
-nav ul li a:hover {
+    transition: all 0.5s;
+  }
+  nav ul li a:after {
+    transition: all 0.5s;
+  }
+  nav ul li a:before {
+    transition: all 0.5s;
+  }
+  nav ul li a:hover {
     color: #555;
-}
-
-/* stroke */
-nav.stroke ul li a,
-nav.fill ul li a {
+  }
+  nav a.navbar-brand:hover {
+    color: #fff;
+  }
+  nav.stroke ul li a {
     position: relative;
-}
-nav.stroke ul li a:after,
-nav.fill ul li a:after {
+  }
+  nav.stroke ul li a:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -75,132 +83,121 @@ nav.fill ul li a:after {
     color: transparent;
     background: #aaa;
     height: 1px;
-}
-nav.stroke ul li a:hover:after {
+  }
+  nav.stroke ul li a:hover:after {
     width: 100%;
-}
-
-nav.fill ul li a {
+  }
+  nav.fill ul li a {
+    position: relative;
     transition: all 2s;
-}
-
-nav.fill ul li a:after {
+  }
+  nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
     text-align: left;
     content: '.';
     margin: 0;
     opacity: 0;
-}
-nav.fill ul li a:hover {
+  }
+  nav.fill ul li a:hover {
     color: #fff;
     z-index: 1;
-}
-nav.fill ul li a:hover:after {
+  }
+  nav.fill ul li a:hover:after {
     z-index: -10;
     animation: fill 1s forwards;
     -webkit-animation: fill 1s forwards;
     -moz-animation: fill 1s forwards;
     opacity: 1;
-}
-
-.nav-item{
+  }
+  .nav-item {
     font-family: 'Caveat';
     font-size: larger;
-}
-
-nav a.navbar-brand:hover{
-    color: #fff;
-}
-/*-----------------------------------------------BODY STYLES---------------------------------------*/
-
-.container{
+  }
+  .container {
     display: block;
-}
-
-.main{
+  }
+  .main {
     grid-area: main;
     border: 5px ridge;
-    border-radius: 20px; 
-    border-color:#2E4F4F;
+    border-radius: 20px;
+    border-color: #2E4F4F;
     background-color: #0E8388;
-    min-height: 700px ;
+    min-height: 700px;
     color: white;
     display: block;
-}
-
-h2{ 
+  }
+  h2 {
     font-family: 'caveat';
     color: aqua;
     opacity: 1;
-}
-
-h3{ 
+  }
+  h3 {
     font-family: 'caveat';
     color: aqua;
     opacity: 1;
-}
-
-p::first-letter{
+  }
+  .ps::first-letter {
     font-family: 'Lobster Two';
     font-size: xx-large;
     color: fuchsia;
-}
-
-.hdrbg{
+  }
+  .hdrbg {
     white-space: pre;
-    background-color: rgb(65, 65, 65, .8);
+    background-color: rgba(65, 65, 65, 0.8);
     border-radius: 20px;
     width: 100%;
-}
-
-.pbg{
+  }
+  .pbg {
     padding: 5px;
     border: 5px ridge;
     border-radius: 20px;
-    background-color: rgb(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, 0.7);
     border-color: #CBE4DE;
     border-width: 3px;
     text-indent: 1.5rem;
-}
-
-.me{
+  }
+  .me {
     border: 5px ridge;
     border-radius: 30px;
     border-color: #CBE4DE;
     min-width: 150px;
     width: 32%;
     max-width: 350px;
-}
-
-col{
+  }
+  .patches-img {
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    max-height: 800px;
+  }
+  .accordion-body {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+    color: white;
+  }
+  h2.accordion-header button {
+    font-size: x-large;
+  }
+  .button-ac {
+    background-color: black;
+  }
+  col {
     min-width: 100px;
-}
-
-@media (min-width:400px) {
-    .col {
-        grid-template-columns: repeat(1fr);
-    }
-}
-
-@media (min-width:600px) {
-    .col {
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-
-@media (min-width: 900px) {
-    .col {
-        grid-template-columns: repeat(3,1fr);
-    }
-}
-
-/*------------------------------------------------Footer styles-----------------------------------------------*/
-
-.links{
+  }
+  .links {
     width: 100px;
     height: 100px;
-}
-
-.footer {
+  }
+  .footer {
     grid-area: footer;
     background-image: linear-gradient(#0099cc, #33b5e5, #9933cc);
     border: 5px ridge;
@@ -209,22 +206,20 @@ col{
     min-width: 400px;
     width: 100%;
     height: 325px;
-}
-
-/*keyframes*/
-
-@-webkit-keyframes fill {
-    0% {
-    width: 0%;
-    height: 1px;
+  }
+  @media (min-width: 400px) {
+    .col {
+      grid-template-columns: repeat(1fr);
     }
-    50% {
-    width: 100%;
-    height: 1px;
+  }
+  @media (min-width: 600px) {
+    .col {
+      grid-template-columns: repeat(2, 1fr);
     }
-    100% {
-    width: 100%;
-    height: 100%;
-    background: #333;
+  }
+  @media (min-width: 900px) {
+    .col {
+      grid-template-columns: repeat(3, 1fr);
     }
-}
+  }
+  
