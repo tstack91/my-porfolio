@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Lobster&family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script type="text/javascript" src="javascript/bootstrap.js"></script>
     <title>Taylor's professional portfolio</title>
 </head>
 <body class="wrapper container">
@@ -25,12 +24,15 @@
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="patches.html">Patch Notes</a>
                 </li>
+                <li><b>|</b></li>
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="about.html">About Me</a>
                 </li>
+                <li><b>|</b></li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact-us.html">Contact me</a>
                 </li>
+                <li><b>|</b></li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.linkedin.com/in/tpstack/">LinkedIn</a>
                 </li>
@@ -38,10 +40,58 @@
         </div>  
         </nav>
     </header>
-    <main class="main mt-4" style="color">
-        <p align="center" class="ps">About Me page coming soon!</p> 
+    <main class="main mt-4 container" style="color">
+        <div class="m-3">
+            <div class="row">
+                <div class="mt-3 col-6" id="slider">
+                    <img src="media/image0.jpg" alt="Image 1">
+                    <img src="media/image1.jpg" alt="Image 2">
+                    <img src="media/image2.jpg" alt="Image 3">
+                    <img src="media/image3.jpg" alt="Image 4">
+                    <button class="slider" id="prev">&lt;</button>
+                    <button class="slider" id="next">&gt;</button>
+                </div>
+                <div class="m-3 col">
+                    <h2><span class="hdrbg"> Me and Technology </span></h2>
+                    <p  class="ps pbg">  My entire life I had interacted with technology whether or was staring in awe at the intracacies of hardware in circuit boards when I disassembled items like my toys or the family toaster, or utilizing and 
+                        understanding software either to play video games or do homework.  I've always been fascinated by the ways machines worked and how so much can be programmed into what seems to be such a lifeless thing, but 
+                        that in and of itself would seem to lend it life.  Software is also an amazing thing, and could create imagery and content that is itself works of art either through masterfully crafted video games or 
+                        painstakingly designed and rendered modeling that would challenge realism itself.  I always knew eventually this is the field I'd end up in, this is where I belonged.<br><br>
+                    </p>
+                </div>
+            </div>    
+            <div class="m-3 row">
+                    <h2><span class="hdrbg"> Work History  </span></h2>
+                    <p class="ps pbg">
+                        Fresh out of High School and initially unsure what I wanted to do, I enlisted in the US Marine Corps.  I was stationed with an Engineer company out of Chicopee, MA and served faithfully until 2015 
+                        when I received an Honorable Discharge.  I went on to work in distribution warehouses for a few years following until coming across an opportunity to do something more with myself by earning my EMT license. I completed my National Registry 
+                        exam and earn my national and state EMT licenses before going on and working in a commercial 911 services for the next few years including the first few of the COVID-19 Pandemic. During my time working in 
+                        EMS I would also earn my Advanced Emergency Medical Dispatcher's license as well.<br><br>
+                        In <a href="image.com">asfasd</a> 2022 I took a position working as an Onsite Medical Representative at Amazon.  Initially on short term assignments 
+                        waiting for construction to be finished, I would go on to work at BDL4 in Windsor, CT and successfully launch Amazon's 4th largest US site.  As part of the Warehouse Health and Safety team, I was the 
+                        implementation and program manager for the site's Regular Activity, Occupational Noise and Hearing Conservation, and First Aid CPR and AED policies.  This role allowed me to create and implement systems 
+                        for tracking compliance with regulations set by Amazon and OSHA and to develop programs to meet and maintain that same compliance.<br><br>
+                        Now after several years in labour and healthcare fields I'm looking to transition to the tech field to build off of something I have always been passionate about and have a natural affinity towards.<br><br>
+                    </p>
+            </div>
+            <div class="m-3 row">        
+                    <h2><span class="hdrbg"> Experience with Technology </span></h2>
+                    <p class="ps pbg">
+                        A few years ago working during the COVID-19 pandemic as an EMT in a commercial ambulance service, I needed a hobby.  I needed something to come home and decompress doing and so I chose to build something.  
+                        With nothing more than Youtube, PC part picker and some user manuals I ordered my soon to be home computer in pieces.  Through the anxiety inducing process of assembling a computer with my only instruction 
+                        being manuals I completed a decade old dream of hand building a computer and further understanding hardware.<br><br>  
+                        In the beginning of 2023 I would begin taking a Harvard Online course CS50T understanding technology which would go into the surface basics of technology.  I completed it and eagerly signed up for another 
+                        course CS50X introduction to computer science, I knew this was where I belonged.  I worked with Scratch to understand basic code, and would complete weekly assignments on VSC writing in C.  I knew this was 
+                        only going to serve as a single course and I would need more to break into the field.  Through Amazon's Career Choice program I signed up with Correlation One to take their Software Developer program which 
+                        brings us to today.  I am now half way through the software developer program, I'm enrolled to start my BS in computer science this fall at Southern New Hampshire University and am actively looking for work
+                        the tech field.<br><br>
+                        This is my portfolio showcasing my understanding and abilities with HTML, CSS, Javascript, Bootstrap and other skills.<br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer class="footer mt-4 mb-4 container">
+    <footer class="footer mt-4 mb-4 container bItem">
         <div class="row mt-3" align="center">  
             <div class="col">
                 <a href="https://www.linkedin.com/in/tpstack/">
@@ -73,55 +123,17 @@
             <div class="col-6">  
                 <p>&copy; <em id="date">2023 </em>Taylor Stack</p>
             </div>
-<!--Modal-->            
-            <div class="col-6" align="right">    
-            <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">Contact me</button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Contact me</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                        <div class="form-floating mb-3">
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="floatingInput"
-                                placeholder="Full name"
-                            >
-                            <label for="floatingInput">Full name</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="floatingInput"
-                                placeholder="Contact Number"
-                            >
-                            <label for="floatingInput">Phone number</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input
-                                type="email"
-                                class="form-control"
-                                id="floatingInput"
-                                placeholder="name@example.com"
-                            >
-                            <label for="floatingInput">Your Email address here</label>
-                        </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
-                        </div>
-                    </div>
-                    </div>
-                </div>
+            <div class=" col-6 container">
+
+                <label class="toggle-switch">
+                    <input type="checkbox" id="mode-toggle">
+                    <span class="switch"</span>
+                        <h4 class="mode-status">Light</h4>
+                </label>
             </div>
         </div>    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript/boostrap.js"></script>        
     </footer>
 </body>
 </html>
