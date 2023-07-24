@@ -358,6 +358,14 @@ input[type=text]{
   border-radius: 6px;
 }
 
+input[type=email]{
+  width: 50%;
+  padding 12px 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
 textarea#msg {
   width: 50%; 
   height: 200px;
@@ -376,12 +384,12 @@ input[type=button], input[type=submit] {
   text-decoration: underline;
 }
 
-#form-submitted-msg {
-  margin-bottom: 3rem;
-  border-radius: 3px;
-  background-color: rgb(204, 166, 62);
-  padding: 0.5rem;
-  width: 60%;
-  text-align: center;
-  color: #fff;
-  display: none;
+.alert {
+    text-align: center;
+    padding:10px;
+    background:#52cc52 !important;
+    color:#fff;
+    margin-bottom:10px;
+    display:none;
+  }
+    
