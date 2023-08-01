@@ -289,6 +289,26 @@ button#next {
     }
   }
 
+/*--Graph styles--*/
+
+
+#graph {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.chart {
+  margin-bottom: 3.5rem;
+}
+.image {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  border: 10px solid cyan;
+}
+
 /*--Dark/Light Mode switch--*/
 
 .dark-mode-colors {
