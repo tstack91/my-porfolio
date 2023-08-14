@@ -413,3 +413,28 @@ input[type=button], input[type=submit] {
     display:none;
   }
     
+
+/*--Sort function--*/
+
+.sortInput {
+  width: 40%;
+  min-width: 250px;
+}
+
+.sortButton{
+  border-radius: 5px;
+}
+
+.display {
+  border: 5px ridge;
+  border-radius: 20px;
+  border-color: black;
+  padding: 5px;
+  height: 100px;
+  width: 40%;
+  min-width: 250px;
+  background-color: #858481;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+}
