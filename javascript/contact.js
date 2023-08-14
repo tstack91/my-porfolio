@@ -106,3 +106,48 @@ form.addEventListener("submit",(e)=>{
     form.reset()
 
 })
+
+
+
+
+//Sort Function//
+
+function oddEvenSort() {
+  let input = document.getElementById("sorter").value;
+  let range = input.split(",").map(str => parseInt(str.trim()));
+  let start = Math.min(...range);
+  let end = Math.max(...range);
+  let length = end - start + 1;
+  let arr = [];
+  // Here I am going to populate the array with values from start to end
+  for (let i = 0; i < length; i++) {
+    arr.push(start + i);
+  }
+  // Now lets apply bubble sort to separate odds and evens
+  let n = arr.length;
+  let isSorted = false;
+  while (!isSorted) {
+    isSorted = true;
+    for (let i = 0; i < n - 1; i++) {
+      if (i % 2 === 0 && arr[i] > arr[i + 1]) {
+        let temp = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = temp;
+        isSorted = false;
+      }
+    }
+  }
+  // Display the sorted array with desired order
+  let resultArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (i % 2 === 0) {
+      resultArr.push(arr[i]);
+    }
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (i % 2 !== 0) {
+      resultArr.push(arr[i]);
+    }
+  }
+  document.getElementById("display").textContent = resultArr.join(", ");
+}
