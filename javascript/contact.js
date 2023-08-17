@@ -77,35 +77,35 @@ const firebaseConfig = {
  
   
   const database = firebase.database()
-
   const ref = database.ref("messages")
-
-
+// Here we will send userData in a JSON formatting.  
+  const userData = {
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
+};
 form.addEventListener("submit",(e)=>{
-    
     e.preventDefault();
-    
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
     const message = document.getElementById('msg').value;
-    
-    ref.push({
-        name:name,
-        email:email,
-        phone: phone,
-        message:message
-    })
-
-    alert.style.display="block"
-
+    // Update the userData object
+    userData.name = name;
+    userData.email = email;
+    userData.phone = phone;
+    userData.message = message;
+    // Displays collected userData in console
+    console.log(userData);
+    // Sends userData to Firebase
+    ref.push(userData);
+    alert.style.display="block";
     setTimeout(()=>{
-        alert.style.display="none"
-    },3000)
-
-    form.reset()
-
-})
+        alert.style.display="none";
+    },3000);
+    form.reset();
+});
 
 
 
