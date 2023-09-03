@@ -126,6 +126,7 @@ font-family: 'Lobster Two', cursive;
   .nav-item {
     font-family: 'Caveat';
     font-size: larger;
+    margin-top: 10px;
   }
   .container {
     display: grid;
